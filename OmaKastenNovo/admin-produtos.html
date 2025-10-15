@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin - Listagem de Produtos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/admin-produtos.css">
+</head>
+<body>
+  <header>
+    <figure>
+      <a href="index.html"><img src="image/logo2.png" id="imagem"></a>
+    </figure>
+    <nav class="noto-serif-texto" id="navbar">
+      <a href="admin-produtos.html">Produtos</a>
+      <a href="admin-add-produto.html">Adicionar Produto</a>
+      <a href="admin-login.html">Sair</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Gerenciar Produtos</h2>
+      <table border="1" width="100%">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Preço</th>
+            <th>Quantidade</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Exemplo de produto (PHP puxaria do banco) -->
+          <tr>
+            <td>1</td>
+            <td>Bolo Floresta Negra</td>
+            <td>R$16,99</td>
+            <td>10</td>
+            <td>
+              <a href="admin-edit-produto.html?id=1" class="btn-editar">Editar</a>
+              <a href="delete.php?id=1" class="btn-excluir">Excluir</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>

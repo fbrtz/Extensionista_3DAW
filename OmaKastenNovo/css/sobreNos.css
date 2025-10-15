@@ -1,0 +1,174 @@
+/*Principais Partes*/
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #FFF5F0; /* Cor de fundo suave */
+  color: #5E503F; /* Marrom clássico */
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #D8A790; /* Rosa antigo */
+  color: white;
+  padding: 10px 20px;
+  height:60px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px; /* Ajuste de altura para a logo */
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+section {
+  padding: 20px;
+  text-align: center;
+}
+
+article.conteudo {
+  font-family: 'Noto Serif', serif;
+  text-align: justify; /* Alinha o texto para justificar */
+  line-height: 1.8; /* Aumenta o espaçamento entre as linhas */
+  margin: 20px auto; /* Dá espaço em volta */
+  max-width: 800px; /* Define uma largura máxima para não ficar muito largo */
+  color: #5C4033; /* Cor suave para o texto */
+}
+
+article.conteudo h2 {
+  text-align: center;
+}
+
+footer {
+  background-color: #5E503F; /* Marrom clássico */
+  color: #FFF;
+  padding: 20px;
+  font-size: 14px;
+  position: relative; /* Mantém o footer dentro do fluxo flex */
+  left: 0;
+  right: 0;
+  margin-top: 20px;
+}
+
+section.footer_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #D8A790;
+}
+
+article.footer_section {
+  flex: 1; /* Ocupa espaço disponível */
+  min-width: 180px; /* Largura mínima */
+  text-align: left; /* Alinha à esquerda */
+}
+
+article.footer_section h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+article.footer_section ul {
+  list-style: none;
+  padding: 0;
+}
+
+article.footer_section ul li {
+  margin-bottom: 5px;
+}
+
+article.footer_section ul li a {
+  text-decoration: none;
+  color: #D8A790;
+}
+
+article.footer_section ul li a:hover {
+  text-decoration: underline;
+}
+
+.midia_social {
+  display: flex;
+  gap: 10px;
+}
+
+form input {
+  padding: 5px;
+  margin-right: 5px;
+  border: 1px solid #D8A790;
+  border-radius: 3px;
+}
+
+form button {
+  background-color: #D8A790;
+  color: #FFF;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+form button:hover {
+  background-color: #C79586;
+}
+
+section.footer_final {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+/*IDs e Classes*/
+#imagem {
+  width: 200px;
+  height: auto;
+}
+
+#navbar {
+  display: flex; /* Faz com que os itens fiquem alinhados lado a lado */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  gap: 20px; /* Espaço entre os itens */
+  /*background-color: #f5ebe0;  Fundo suave (pode personalizar) */
+  padding: 10px; /* Espaço interno para a barra */  
+}
+
+/* Estilo dos itens */
+#navbar a {
+  margin-right: 20px; /* Remove margens padrão */
+  letter-spacing: 3px;
+  text-decoration: none; /* Remove o sublinhado dos links */
+  color: #6c4a4a; /* Cor do texto (pode usar rosa antigo ou marrom) */  
+  font-weight: 900;
+}
+
+#navbar a:hover {
+  opacity:0.6; /* Muda a cor ao passar o mouse */
+}
+
+/*Fonte de texto*/
+.noto-serif-texto {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-variation-settings:
+  "width" 100;
+}

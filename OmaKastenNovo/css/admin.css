@@ -1,0 +1,143 @@
+/* Base herdada do site */
+.noto-serif-texto {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-variation-settings:
+  "width" 100;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #FFF5F0;
+  color: #5E503F;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #D8A790;
+  padding: 10px 20px;
+  height: 60px;
+}
+
+#imagem {
+  width: 180px;
+  height: auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+section {
+  padding: 20px;
+  text-align: center;
+}
+
+/*IDs e Classes*/
+#imagem {
+  width: 200px;
+  height: auto;
+}
+
+#navbar {
+  display: flex; /* Faz com que os itens fiquem alinhados lado a lado */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  gap: 20px; /* Espaço entre os itens */
+  /*background-color: #f5ebe0;  Fundo suave (pode personalizar) */
+  padding: 10px; /* Espaço interno para a barra */  
+}
+
+/* Estilo dos itens */
+#navbar a {
+  margin-right: 20px; /* Remove margens padrão */
+  letter-spacing: 3px;
+  text-decoration: none; /* Remove o sublinhado dos links */
+  color: #6c4a4a; /* Cor do texto (pode usar rosa antigo ou marrom) */  
+  font-weight: 900;
+}
+
+#navbar a:hover {
+  opacity:0.6; /* Muda a cor ao passar o mouse */
+  transition: opacity 1s ease;
+}
+
+/* Estilo da página inicial do admin */
+.admin-menu {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.admin-menu h1 {
+  font-family: 'Noto Serif', serif;
+  color: #6C4A4A;
+  margin-bottom: 10px;
+}
+
+.admin-menu p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+/* Cards do menu */
+.menu-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #D8A790;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  text-decoration: none;
+  color: #5E503F;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background-color: #fdf0ea;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+  color: #D8A790;
+}
+
+.card p {
+  font-size: 0.95em;
+  color: #4A3636;
+}
+
+/* Rodapé */
+.footer_final {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background-color: #5E503F;
+    color: #FFF;
+    margin-top: 40px;
+}
+

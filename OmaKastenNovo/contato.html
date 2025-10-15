@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oma Kasten</title>
+  <link rel="stylesheet" href="css/contato.css">
+</head>
+<body>
+  <header> <!--Cabeçalho-->
+    <figure>
+      <a href="index.html"><img src="image/logo2.png" id="imagem"></a>
+    </figure>
+    <nav class="noto-serif-texto" id="navbar">
+      <a href="sobreNos.html">Sobre Nós</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+  <main>  <!-- Conteúdo Principal -->
+    <section id="contato">
+      <h2>Entre em Contato</h2>
+      <p>Tem dúvidas ou deseja fazer um pedido? Preencha o formulário abaixo e entraremos em contato o mais breve possível!</p>
+      <form action="#" class="formulario_contato">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+        
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+        
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+        
+        <label for="pedido">Descrição do Pedido:</label>
+        <textarea id="pedido" name="pedido" rows="5" placeholder="Descreva aqui os detalhes do pedido" required></textarea>  
+        <button type="submit">Enviar Pedido</button>
+      </form>
+      <div class="formas_contato">
+        <h3>Formas de Contato</h3>
+        <p>📞 Ligue para nós: (021) 9666-70228</p> <!--(021) 9666-70228-->
+        <p>📧 Envie um e-mail: Kasten.Oma@gmail.com</p> <!--Kasten.Oma@gmail.com-->
+        <p>📍 Visite-nos: Rua Exemplo, 123, Centro - Sua Cidade</p>
+        <p>💬 Acompanhe-nos no <a href="https://www.instagram.com/oma_kasten?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a> para novidades e promoções!</p>
+      </div>
+    </section>
+  </main>
+  <footer>  <!-- Rodapé -->
+    <div class="footer_container">
+      <div class="footer_section">
+        <h3>Institucional</h3>
+        <ul>
+          <li><a href="#">Quem Somos</a></li>
+          <li><a href="#">Especialidades</a></li>
+          <li><a href="#">Política de Frete</a></li>
+          <li><a href="#">Política de Trocas e Devoluções</a></li>
+        </ul>
+      </div>
+      <div class="footer_section">
+        <h3>Meios de Pagamento</h3>
+        <p>Cartões de Crédito e Pix</p>
+      </div>
+      <div class="footer_section">
+        <h3>Formas de Envio</h3>
+        <p>Correios - Sedex</p>
+      </div>
+      <div class="footer_section">
+        <h3>Redes Sociais</h3>
+          <ul class="midia_social">
+            <li><a href="https://www.instagram.com/oma_kasten?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a></li>
+          </ul>
+      </div>
+      <div class="footer_section">
+        <h3>Cadastre-se</h3>
+        <p>Receba novidades deliciosas:</p>
+        <form action="#">
+          <input type="email" placeholder="Seu e-mail">
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer_final">
+      <p>© 2024 Oma Kasten - Todos os direitos reservados</p>
+      <p>Criado com carinho</p>
+    </div>
+  </footer>
+</body>
