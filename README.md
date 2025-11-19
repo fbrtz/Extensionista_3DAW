@@ -1,6 +1,6 @@
 # 🏠 Oma Kasten - Sistema de Gestão e E-commerce
 
-![Oma Kasten]<img src="./OmaKastenNovo/image/logo2.png" width="80">
+![Oma Kasten]<img src="./OmaKastenNovo/image/logo2.png" width="150">
 
 Sistema completo de gestão de produtos e pedidos para **Oma Kasten**, incluindo:
 
