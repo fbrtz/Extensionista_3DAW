@@ -1,4 +1,4 @@
-# 🏠 Oma Kasten - Sistema de Gestão e E-commerce
+# 🏠 Oma Kasten - Sistema de Gestão de e-commerce
 
 <img src="./OmaKastenNovo/image/logo2.png" width="150" alt="Oma Kasten">
 
