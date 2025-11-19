@@ -18,7 +18,7 @@ Sistema completo de gestão de produtos e pedidos para **Oma Kasten**, incluindo
 |------------|------|-----------|
 | PHP | ![PHP](https://www.php.net/images/logos/php-logo.svg) | Linguagem de backend para comunicação com o banco de dados e lógica do servidor |
 | MySQL | ![MySQL](https://www.mysql.com/common/logos/logo-mysql-170x115.png) | Banco de dados relacional usado para armazenar produtos, contatos e usuários |
-| XAMPP | ![XAMPP](https://www.apachefriends.org/images/xampp-logo-128.png) | Servidor local que inclui Apache, PHP e MySQL |
+| XAMPP | ![XAMPP]([https://www.apachefriends.org/images/xampp-logo-128.png](https://www.apachefriends.org/images/xampp-logo-ac950edf.svg)) | Servidor local que inclui Apache, PHP e MySQL |
 | HTML / CSS / JS | ![HTML](https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png) | Estrutura e estilo das páginas, com interações dinâmicas via JS |
 
 ---
