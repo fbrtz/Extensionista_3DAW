@@ -1,4 +1,4 @@
-# 🏠 Oma Kasten - Sistema de Gestão de e-commerce
+# Oma Kasten - Solução para criação de vitrine digital
 
 <img src="./OmaKastenNovo/image/logo2.png" width="150" alt="Oma Kasten">
 
