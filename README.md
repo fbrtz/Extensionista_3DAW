@@ -30,5 +30,7 @@ Sistema completo de gestão de produtos e pedidos para **Oma Kasten**, incluindo
 
 2. **Banco de dados MySQL** dentro do XAMPP
 
-3. Pasta do projeto dentro do diretório do servidor, geralmente:
+3. Pasta do projeto dentro do diretório do servidor, geralmente: C:\xampp\htdocs\OmaKastenNovo
+
+
 
