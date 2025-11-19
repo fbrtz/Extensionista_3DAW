@@ -16,10 +16,10 @@ Sistema completo de gestão de produtos e pedidos para **Oma Kasten**, incluindo
 
 | Tecnologia | Logo | Descrição |
 |------------|------|-----------|
-| PHP | ![PHP](https://www.php.net/images/logos/php-logo.svg) | Linguagem de backend para comunicação com o banco de dados e lógica do servidor |
-| MySQL | ![MySQL](https://www.mysql.com/common/logos/logo-mysql-170x115.png) | Banco de dados relacional usado para armazenar produtos, contatos e usuários |
-| XAMPP | ![XAMPP](https://www.apachefriends.org/images/xampp-logo-ac950edf.svg) | Servidor local que inclui Apache, PHP e MySQL |
-| HTML / CSS / JS | ![HTML](https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png) | Estrutura e estilo das páginas, com interações dinâmicas via JS |
+| PHP | <img src="https://www.php.net/images/logos/php-logo.svg" width="80"> | Linguagem de backend para comunicação com o banco de dados e lógica do servidor |
+| MySQL | <img src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" width="80"> | Banco de dados relacional usado para armazenar produtos, contatos e usuários |
+| XAMPP | <img src="https://www.apachefriends.org/images/xampp-logo-ac950edf.svg" width="80"> | Servidor local que inclui Apache, PHP e MySQL |
+| HTML / CSS / JS | <img src="https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png" width="80"> | Estrutura e estilo das páginas, com interações dinâmicas via JS |
 
 ---
 
