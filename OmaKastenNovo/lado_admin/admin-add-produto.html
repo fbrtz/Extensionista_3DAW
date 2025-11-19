@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin - Adicionar Produto</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/admin-add-produto.css">
+</head>
+<body>
+  <header>
+    <figure>
+      <a href="index.html"><img src="../image/logo2.png" id="imagem"></a>
+    </figure>
+    <nav class="noto-serif-texto" id="navbar">
+      <a href="admin-dashboard.html">Início</a>
+      <a href="admin-produtos.html">Gerenciar Produtos</a>
+      <a href="admin-add-produto.html">Adicionar Produto</a>
+      <a href="admin-contatos.html">Contatos</a>
+      <a href="../login/login.html">Sair</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="contato">
+      <h2>Adicionar Novo Produto</h2>
+
+      <form method="POST" enctype="multipart/form-data" class="formulario_contato">
+
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="descricao">Descrição:</label>
+        <textarea id="descricao" name="descricao" rows="5" required></textarea>
+
+        <label for="valor">Preço:</label>
+        <input type="number" id="valor" name="valor" step="0.01" required>
+
+        <label for="imagem">Imagem:</label>
+        <input type="file" id="imagem" name="imagem" accept="image/*">
+
+        <button type="submit">Salvar Produto</button>
+      </form>
+
+    </section>
+  </main>
+
+  <script src="js/add-produto.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin - Contatos Recebidos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/admin-contatos.css">
+</head>
+<body>
+
+<header>
+  <figure>
+    <a href="index.html"><img src="../image/logo2.png" id="imagem" alt="Oma Kasten"></a>
+  </figure>
+  <nav class="noto-serif-texto" id="navbar">
+    <a href="admin-dashboard.html">Início</a>
+    <a href="admin-produtos.html">Gerenciar Produtos</a>
+    <a href="admin-contatos.html">Contatos Recebidos</a>
+    <a href="admin-contatos.html">Contatos</a>  
+    <a href="../login/login.html">Sair</a>
+  </nav>
+</header>
+
+<main>
+  <section>
+    <h2>Contatos Recebidos</h2>
+
+    <div id="filtros">
+        <input type="text" id="buscar" placeholder="Buscar por nome...">
+
+        <label>Data inicial:</label>
+        <input type="date" id="dataInicio">
+
+        <label>Data final:</label>
+        <input type="date" id="dataFim">
+
+        <button id="btn-filtrar">Filtrar</button>
+    </div>
+
+    <div class="table-wrap">
+      <table id="tabelaContatos" border="0" width="100%">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Telefone</th>
+            <th>Mensagem</th>
+            <th>Enviado em</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="5" class="td-carregando">Carregando...</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <section class="footer_final">
+    <p>© 2024 Oma Kasten - Painel Administrativo</p>
+  </section>
+</footer>
+
+<script src="/OmaKastenNovo/lado_admin/js/contatos-admin.js"></script>
+</body>
+</html>

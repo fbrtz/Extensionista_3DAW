@@ -1,0 +1,271 @@
+/*Principais Partes*/
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #FFF5F0; /* Cor de fundo suave */
+  color: #5E503F; /* Marrom clássico */
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #D8A790; /* Rosa antigo */
+  color: white;
+  padding: 10px 20px;
+  height:60px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px; /* Ajuste de altura para a logo */
+}
+
+nav {  /* Barra de navegação */
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+section {
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  margin: 0;
+  background-color: #5E503F; 
+  color: #FFF;
+  padding: 20px;
+  font-size: 14px;
+  position: relative;
+  left: 0;
+  right: 0;
+  margin-top: 80px;
+}
+
+section.footer_container {
+  display: flex; /* Layout flexível */
+  flex-wrap: wrap; /* Permite quebra de linha para dispositivos menores */
+  justify-content: space-between; /* Espaçamento uniforme */
+  gap: 20px; /* Espaçamento entre elementos */
+  border-bottom: 1px solid #D8A790; /* Linha divisória */
+  padding-bottom: 20px; /* Espaço interno */
+}
+
+article.footer_section {
+  flex: 1; /* Ocupa espaço disponível */
+  min-width: 180px; /* Largura mínima */
+  text-align: left; /* Alinha à esquerda */
+}
+
+article.footer_section h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+article.footer_section ul {
+  list-style: none;
+  padding: 0;
+}
+
+article.footer_section ul li {
+  margin-bottom: 5px;
+}
+
+article.footer_section ul li a {
+  text-decoration: none;
+  color: #D8A790;
+}
+
+article.footer_section ul li a:hover {
+  text-decoration: underline;
+}
+
+.midia_social {
+  display: flex;
+  gap: 10px;
+}
+
+/* Botão do formulário */
+form input {
+  padding: 5px;
+  margin-right: 5px;
+  border: 1px solid #D8A790;
+  border-radius: 3px;
+}
+
+form button {
+  background-color: #D8A790;
+  color: #FFF;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+form button:hover {
+  background-color: #C79586;
+}
+
+/* Footer-bottom */
+section.footer_final {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+/*IDs e Classes*/
+#imagem {
+  width: 200px;
+  height: auto;
+}
+
+#navbar {
+  display: flex; /* Faz com que os itens fiquem alinhados lado a lado */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  gap: 20px; /* Espaço entre os itens */
+  /*background-color: #f5ebe0;  Fundo suave (pode personalizar) */
+  padding: 10px; /* Espaço interno para a barra */  
+}
+
+/* Estilo dos itens */
+#navbar a {
+  margin-right: 20px; /* Remove margens padrão */
+  letter-spacing: 3px;
+  text-decoration: none; /* Remove o sublinhado dos links */
+  color: #6c4a4a; /* Cor do texto (pode usar rosa antigo ou marrom) */  
+  font-weight: 900;
+}
+
+#navbar a:hover {
+  opacity:0.6; /* Muda a cor ao passar o mouse */
+}
+
+.noto-serif-texto {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-variation-settings:
+  "width" 100;
+}
+
+.titulo {
+  font-family: 'Noto Serif', serif;
+  text-align: center;
+  font-size: 2rem;
+  color: #5C4033;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Seção de produtos */
+.introducao_produtos {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+section.produto {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.produtos img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+article.produtos_descricao {
+  padding: 15px;
+  text-align: left;
+}
+
+article.produtos_descricao h3 {
+  color: #6c4a4a;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+article.produtos_descricao p {
+  font-size: 1em;
+  line-height: 1.5;
+  color: #4a3636;
+}
+
+h3 a {
+  color:#d88863;
+}
+
+section h2 {
+  padding-left: 200px;
+}
+
+main h1 {
+  font-family: 'Playfair Display', serif; /* Substituir por Georgia ou Merriweather, se preferir */
+  font-size: 2.5em;
+  color: #6c4a4a; /* Marrom suave */
+  margin-bottom: 10px;
+  padding-left: 2%;
+}
+
+main h3 {
+  font-family: 'Merriweather', Georgia, 'Times New Roman', Times, serif;
+  font-size: 23px;
+  text-align: center;
+}
+
+.descubra_delicias {
+  margin-top: 70px; /* Ajuste fino do espaçamento superior */
+  margin-bottom: 0; /* Remove margens inferiores desnecessárias */
+  text-align: center; /* Garante centralização */
+  font-size: 1.4em; /* Opcional: ajuste do tamanho da fonte */
+  color: #5E503F; /* Mantém a cor */
+}
+
+main p {
+  font-family: 'Merriweather', serif; /* Substitua por outra fonte de sua preferência */
+  font-size: 1.2em;
+  color: #4a3636; /* Tom mais suave e acolhedor */
+  line-height: 1.6;
+  padding-left: 2%;
+}
+
+.produtos {
+  height: 200px; /* Altura da imagem */
+  width: 280px; /* Largura da imagem */
+  border-radius: 10px; /* Bordas arredondadas */
+  overflow: hidden; /* Esconde o conteúdo que extrapola o contêiner */
+  -webkit-transition: -webkit-transform .5s ease; /* Transição suave para navegadores baseados em WebKit */
+  transition: transform .5s ease; /* Transição suave para o efeito de transformação */
+}
+
+/* Define o comportamento ao passar o mouse (hover) */
+.produtos:hover {
+  -webkit-transform: scale(1.1); /* Aumenta a escala em 10% */
+  transform: scale(1.1); /* Aumenta a escala em 10% */
+  cursor: pointer; /* Exibe o cursor como ponteiro */
+}
+
+h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin - Listagem de Produtos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/admin-produtos.css">
+</head>
+<body>
+  <header>
+    <figure>
+      <a href="index.html"><img src="../image/logo2.png" id="imagem" alt="Oma Kasten"></a>
+    </figure>
+    <nav class="noto-serif-texto" id="navbar">
+      <a href="admin-dashboard.html">Início</a>
+      <a href="admin-produtos.html">Gerenciar Produtos</a>
+      <a href="admin-add-produto.html">Adicionar Produto</a>
+      <a href="admin-contatos.html">Contatos</a>
+      <a href="../login/login.html">Sair</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Gerenciar Produtos</h2>
+
+      <div class="top-actions">
+          <a href="admin-add-produto.html" class="btn-add-produto">+ Adicionar Produto</a>
+      </div>
+
+      <div id="filtros">
+        <input type="text" id="buscar" placeholder="Buscar por nome...">
+        <select id="filtroValor">
+          <option value="">Filtrar por valor</option>
+          <option value="10">Até R$10</option>
+          <option value="20">Até R$20</option>
+          <option value="30">Até R$30</option>
+        </select>
+      </div>
+
+      <div class="table-wrap">
+        <table id="tabelaProdutos" border="0" width="100%">
+          <thead>
+            <tr>
+              <th>Imagem</th>
+              <th>Nome</th>
+              <th>Valor</th>
+              <th>Unidade</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Conteúdo preenchido dinamicamente por js/produtos-admin.js -->
+            <tr>
+              <td colspan="5" class="td-carregando">Carregando...</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section class="footer_final">
+      <p>© 2024 Oma Kasten - Painel Administrativo</p>
+    </section>
+  </footer>
+
+  <script src="/OmaKastenNovo/lado_admin/js/produtos-admin.js"></script>
+</body>
+</html>

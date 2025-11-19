@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin - Editar Produto</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/admin-edit-produto.css">
+</head>
+<body>
+  <header>
+    <figure>
+      <a href="index.html"><img src="../image/logo2.png" id="imagem"></a>
+    </figure>
+    <nav class="noto-serif-texto" id="navbar">
+      <a href="admin-dashboard.html">Início</a>
+      <a href="admin-produtos.html">Gerenciar Produtos</a>
+      <a href="admin-add-produto.html">Adicionar Produto</a>
+      <a href="admin-contatos.html">Contatos</a>
+      <a href="../login/login.html">Sair</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="edicao">
+      <h2>Editar Produto</h2>
+
+      <form action="api/atualizar_produto.php" method="POST" enctype="multipart/form-data" class="formulario_edicao">
+
+        <input type="hidden" name="id">
+
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="descricao">Descrição:</label>
+        <textarea id="descricao" name="descricao" rows="5" required></textarea>
+
+        <label for="preco">Preço:</label>
+        <input type="number" id="preco" name="valor" step="0.01" required>
+
+        <!-- Local EXATO onde o JS deve inserir o select -->
+        <div id="campo-unidade"></div>
+
+        <label for="imagem">Imagem:</label>
+        <input type="file" id="imagem" name="imagem" accept="image/*">
+
+        <button type="submit">Atualizar Produto</button>
+
+      </form>
+    </section>
+  </main>
+  <script src="js/edit-produto.js"></script>
+</body>
+</html>

@@ -1,0 +1,250 @@
+/*Principais Partes*/
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #FFF5F0; /* Cor de fundo suave */
+  color: #5E503F; /* Marrom clássico */
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #D8A790; /* Rosa antigo */
+  color: white;
+  padding: 10px 20px;
+  height:60px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px; /* Ajuste de altura para a logo */
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+section {
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  background-color: #5E503F; 
+  color: #FFF;
+  padding: 20px;
+  font-size: 14px;
+  position: relative;
+  left: 0;
+  right: 0;
+}
+
+/* Footer-container */
+.footer_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #D8A790;
+}
+
+.footer_section {
+  flex: 1;
+  min-width: 150px;
+}
+
+.footer_section h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer_section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer_section ul li {
+  margin-bottom: 5px;
+}
+
+.footer_section ul li a {
+  text-decoration: none;
+  color: #D8A790;
+}
+
+.footer_section ul li a:hover {
+  text-decoration: underline;
+}
+
+.midia_social {
+  display: flex;
+  gap: 10px;
+}
+
+/* Botão do formulário */
+form input {
+  padding: 5px;
+  margin-right: 5px;
+  border: 1px solid #D8A790;
+  border-radius: 3px;
+}
+
+form button {
+  background-color: #D8A790;
+  color: #FFF;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+form button:hover {
+  background-color: #C79586;
+}
+
+/* Footer-bottom */
+.footer_final {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+} 
+/*IDs e Classes*/
+#imagem {
+  width: 200px;
+  height: auto;
+}
+
+#navbar {
+  display: flex; /* Faz com que os itens fiquem alinhados lado a lado */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  gap: 20px; /* Espaço entre os itens */
+  /*background-color: #f5ebe0;  Fundo suave (pode personalizar) */
+  padding: 10px; /* Espaço interno para a barra */  
+}
+
+/* Estilo dos itens */
+#navbar a {
+  margin-right: 20px; /* Remove margens padrão */
+  letter-spacing: 3px;
+  text-decoration: none; /* Remove o sublinhado dos links */
+  color: #6c4a4a; /* Cor do texto (pode usar rosa antigo ou marrom) */  
+  font-weight: 900;
+}
+
+#navbar a:hover {
+  opacity:0.6; /* Muda a cor ao passar o mouse */
+}
+
+.noto-serif-texto {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-variation-settings:
+  "width" 100;
+}
+
+#contato {
+  background-color: #FFF5F0;
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+#contato h2 {
+  font-family: 'Georgia', serif;
+  color: #6C4A4A;
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#contato p {
+  font-family: 'Merriweather', serif;
+  font-size: 1em;
+  color: #4A3636;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.formulario_contato {
+  max-width: 600px;
+  margin: 0 auto 20px auto;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formulario_contato label {
+  font-weight: bold;
+  color: #6C4A4A;
+}
+
+.formulario_contato input, .formulario_contato textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #D8A790;
+  border-radius: 5px;
+  font-family: 'Arial', sans-serif;
+}
+
+.formulario_contato textarea {
+  resize: vertical; /* Permite redimensionar apenas na vertical */
+}
+
+.formulario_contato button {
+  background-color: #D8A790;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario_contato button:hover {
+  background-color: #C79586;
+}
+
+.formas_contato {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.formas_contato h3 {
+  font-family: 'Georgia', serif;
+  color: #6C4A4A;
+  margin-bottom: 10px;
+}
+
+.formas_contato p {
+  font-size: 1em;
+  color: #4A3636;
+}
+
+.formas_contato a {
+  color: #D8A790;
+  text-decoration: none;
+}
+
+.formas_contato a:hover {
+  text-decoration: underline;
+}
