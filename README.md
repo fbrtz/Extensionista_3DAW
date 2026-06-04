@@ -1,36 +1,59 @@
-# Oma Kasten - Solução para criação de vitrine digital
+# Oma Kasten
 
-<img src="./OmaKastenNovo/image/logo2.png" width="150" alt="Oma Kasten">
+<img src="frontend/assets/images/logo2.png" width="150" alt="Oma Kasten Logo">
 
-Sistema completo de gestão de produtos e pedidos para **Oma Kasten**, incluindo:
+**Solução completa para gerenciar Oma Kasnte, uma plataforma de venda de biscoitos e guloseimas caseiras!** – gerencie produtos, pedidos e contatos com um painel administrativo robusto e interface moderna.
 
-- Painel administrativo (CRUD de produtos, contatos, login de admin)
-- Tela de cadastro e listagem de produtos para clientes
-- Página de contato com envio para o banco de dados
-- Integração com MySQL via PHP
-- Frontend moderno usando HTML, CSS e JavaScript
-
----
-
-## 💻 Tecnologias utilizadas
-
-| Tecnologia | Logo | Descrição |
-|------------|------|-----------|
-| PHP | <img src="https://www.php.net/images/logos/php-logo.svg" width="80"> | Linguagem de backend para comunicação com o banco de dados e lógica do servidor |
-| MySQL | <img src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" width="80"> | Banco de dados relacional usado para armazenar produtos, contatos e usuários |
-| XAMPP | <img src="https://www.apachefriends.org/images/xampp-logo-ac950edf.svg" width="80"> | Servidor local que inclui Apache, PHP e MySQL |
-| HTML / CSS / JS | <img src="https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png" width="80"> | Estrutura e estilo das páginas, com interações dinâmicas via JS |
+[![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://php.net)
+[![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://mysql.com)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![XAMPP](https://img.shields.io/badge/XAMPP-FB7A24?style=for-the-badge&logo=xampp&logoColor=white)](https://apachefriends.org)
 
 ---
 
-## 🚀 Pré-requisitos
+## 🔍 Visão geral
 
-1. **XAMPP** instalado no seu computador  
-   Baixe em: [https://www.apachefriends.org/pt_br/index.html](https://www.apachefriends.org/pt_br/index.html)
+O **Oma Kasten** é um sistema completo de gestão de produtos e pedidos, desenvolvido para criar uma vitrine digital eficiente. Oferece uma experiência tanto para administradores quanto para clientes finais.
 
-2. **Banco de dados MySQL** dentro do XAMPP
+---
 
-3. Pasta do projeto dentro do diretório do servidor, geralmente: C:\xampp\htdocs\OmaKastenNovo
+## ✨ Funcionalidades
 
+| Módulo               | Descrição                                                                 |
+|----------------------|---------------------------------------------------------------------------|
+| 👑 **Painel administrativo** | CRUD completo de produtos, gerenciamento de contatos e login protegido|
+| 🛍️ **Vitrine para clientes** | Tela de cadastro e listagem de produtos                               |
+| 📬 **Contato integrado**     | Página de contato que salva mensagens diretamente no banco de dados   |
+| 🔐 **Autenticação**          | Área administrativa com controle de acesso via login                  |
+| 🗄️ **Banco de dados**        | Integação com MySQL para persistência de dados                        |
 
+---
 
+## 💻 Tecnologias
+
+| Tecnologia       | Descrição                                                              |
+|------------------|------------------------------------------------------------------------|
+| **PHP**          | Backend responsável pela lógica do servidor e comunicação com o banco  |
+| **MySQL**        | Banco de dados relacional para armazenar produtos, contatos e usuários |
+| **XAMPP**        | Ambiente local com Apache, PHP e MySQL (servidor all-in-one)           |
+| **HTML/CSS/JS**  | Frontend moderno com interações dinâmicas e layout responsivo          |
+
+---
+
+## ⚙️ Pré-requisitos
+
+Antes de começar, certifique-se de ter instalado:
+
+- [XAMPP](https://www.apachefriends.org/pt_br/index.html) (inclui Apache, PHP e MySQL)
+
+> O projeto foi desenvolvido para rodar localmente utilizando o servidor embutido do XAMPP.
+
+---
+
+## 👥 Autores
+
+**Fábio Rodrigo Ortiz dos Santos**  
+
+**Marcos Ferreira de Souza** 
