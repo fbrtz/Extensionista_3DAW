@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
   imagemLabel.parentNode.insertBefore(selectUnidade, imagemLabel);
 
   // Carregar unidades
-  fetch("api/listar_unidades_medida.php")
+  fetch("./api/listar_unidades_medida.php")
     .then(r => r.json())
     .then(unidades => {
 
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const fd = new FormData(form);
 
     try {
-      const resp = await fetch("api/inserir_produto.php", {
+      const resp = await fetch("./api/inserir_produto.php", {
         method: "POST",
         body: fd
       });

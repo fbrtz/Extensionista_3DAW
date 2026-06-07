@@ -9,7 +9,7 @@ document.getElementById("formLogin").addEventListener("submit", async (e) => {
     formData.append("senha", senha);
 
     try {
-        const response = await fetch("../login/api/login.php", {
+        const response = await fetch("./api/login.php", {
             method: "POST",
             body: formData
         });
@@ -17,7 +17,7 @@ document.getElementById("formLogin").addEventListener("submit", async (e) => {
         const result = await response.json();
 
         if (result.status === "ok") {
-            window.location.href = "../lado_admin/admin-dashboard.html";
+            window.location.href = "../admin/admin-dashboard.html";
         } else {
             document.getElementById("erroLogin").style.display = "block";
         }

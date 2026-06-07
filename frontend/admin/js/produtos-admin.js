@@ -20,7 +20,7 @@ function renderizarTabela(lista) {
     }
 
     lista.forEach(p => {
-        const imagemSrc = p.imagem ? `../image/${p.imagem}` : '../image/logo2.png';
+        const imagemSrc = p.imagem ? `../assets/images/${p.imagem}` : '../../assets/images/logo.png';
         tabela.innerHTML += `
         <tr>
             <td class="td-img"><img src="${imagemSrc}" alt="${p.nome}"></td>

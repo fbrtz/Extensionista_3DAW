@@ -33,7 +33,7 @@ async function carregarProdutos() {
 
             html += `
                 <td>
-                    <img class="produtos" src="../image/${p.imagem}">
+                    <img class="produtos" src="../assets/images/${p.imagem}">
                     <p><b>${p.nome}</b></p>
                     <p class="descricao">${p.descricao}</p>
                     <p class="preco">R$${preco}/${p.unidade}</p>

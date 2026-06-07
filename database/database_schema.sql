@@ -86,25 +86,25 @@ VALUES (
 
 
 INSERT INTO produtos (nome, descricao, valor, imagem, unidade_medida_id) VALUES
-('Bolo de Chocolate', 'Fatia de bolo caseiro com cobertura cremosa de chocolate.', 12.00, '/OmaKastenNovo/image/doce1.png', 2),
+('Bolo de Chocolate', 'Fatia de bolo caseiro com cobertura cremosa de chocolate.', 12.00, 'doce1.jpg', 2),
 
-('Bolo Red Velvet', 'Fatia de Red Velvet com creme especial de cream cheese.', 14.00, '/OmaKastenNovo/image/doce2.png', 2),
+('Bolo Red Velvet', 'Fatia de Red Velvet com creme especial de cream cheese.', 14.00, 'doce2.jpg', 2),
 
-('Brownie Tradicional', 'Brownie macio com sabor intenso de chocolate.', 8.00, '/OmaKastenNovo/image/doce3.png', 1),
+('Brownie Tradicional', 'Brownie macio com sabor intenso de chocolate.', 8.00, 'doce3.jpg', 1),
 
-('Cookies de Baunilha', 'Cookies caseiros crocantes com gotas de chocolate.', 5.00, '/OmaKastenNovo/image/doce1.png', 1),
+('Cookies de Baunilha', 'Cookies caseiros crocantes com gotas de chocolate.', 5.00, 'doce1.jpg', 1),
 
-('Cupcake de Morango', 'Cupcake macio de baunilha com cobertura de morango.', 7.50, '/OmaKastenNovo/image/doce2.png', 1),
+('Cupcake de Morango', 'Cupcake macio de baunilha com cobertura de morango.', 7.50, 'doce2.jpg', 1),
 
-('Cupcake de Oreo', 'Cupcake com massa de chocolate e cobertura cremosa com Oreo.', 8.00, '/OmaKastenNovo/image/doce3.png', 1),
+('Cupcake de Oreo', 'Cupcake com massa de chocolate e cobertura cremosa com Oreo.', 8.00, 'doce3.jpg', 1),
 
-('Torta de Limão', 'Fatia de torta artesanal de limão com merengue suave.', 13.00, '/OmaKastenNovo/image/doce1.png', 2),
+('Torta de Limão', 'Fatia de torta artesanal de limão com merengue suave.', 13.00, 'doce1.jpg', 2),
 
-('Pudim Tradicional', 'Porção de pudim de leite condensado caseiro.', 9.50, '/OmaKastenNovo/image/doce2.png', 3),
+('Pudim Tradicional', 'Porção de pudim de leite condensado caseiro.', 9.50, 'doce2.jpg', 3),
 
-('Brigadeiro Gourmet', 'Brigadeiro artesanal feito com chocolate belga.', 3.50, '/OmaKastenNovo/image/doce3.png', 1),
+('Brigadeiro Gourmet', 'Brigadeiro artesanal feito com chocolate belga.', 3.50, 'doce3.jpg', 1),
 
-('Copo da Felicidade', 'Camadas de mousse, brigadeiro e bolo no pote.', 15.00, '/OmaKastenNovo/image/doce1.png', 3),
-('Cheesecake de Frutas Vermelhas', 'Fatia de cheesecake com calda artesanal de frutas vermelhas.', 14.50, '/OmaKastenNovo/image/doce2.png', 2),
+('Copo da Felicidade', 'Camadas de mousse, brigadeiro e bolo no pote.', 15.00, 'doce1.jpg', 3),
+('Cheesecake de Frutas Vermelhas', 'Fatia de cheesecake com calda artesanal de frutas vermelhas.', 14.50, 'doce2.jpg', 2),
 
-('Trufa de Chocolate Branco', 'Trufa recheada com creme especial de chocolate branco.', 4.50, '/OmaKastenNovo/image/doce3.png', 1);
+('Trufa de Chocolate Branco', 'Trufa recheada com creme especial de chocolate branco.', 4.50, 'doce3.jpg', 1);

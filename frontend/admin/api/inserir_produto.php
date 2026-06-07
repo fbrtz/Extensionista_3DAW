@@ -19,8 +19,8 @@ if (!empty($_FILES["imagem"]["name"])) {
     $orig = basename($_FILES["imagem"]["name"]);
     $orig = preg_replace("/[^a-zA-Z0-9\.\-_]/", "_", $orig);
 
-    $dest = __DIR__ . "/../../image/" . $orig;
-
+    $dest = __DIR__ . "/../../assets/images/" . $orig;
+    
     if (move_uploaded_file($tmp, $dest)) {
         $imagemNome = $orig;
     }
