@@ -1,6 +1,6 @@
 # Oma Kasten
 
-<img src="frontend/assets/images/logo2.png" width="150" alt="Oma Kasten Logo">
+<img src="frontend/assets/images/logo.png" width="150" alt="Oma Kasten Logo">
 
 **Solução completa para gerenciar Oma Kasnte, uma plataforma de venda de biscoitos e guloseimas caseiras!** – gerencie produtos, pedidos e contatos com um painel administrativo robusto e interface moderna.
 
