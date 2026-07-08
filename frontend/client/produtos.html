@@ -1,3 +1,12 @@
+<!--
+=====================================================
+ARQUIVO: produtos.html (CORRIGIDO)
+CAMINHO: /produtos.html
+DESCRIÇÃO: Página de produtos da Oma Kasten.
+           Inclui ícone do carrinho na navbar
+           e botões de adicionar ao carrinho.
+=====================================================
+-->
 <!-- #D8A790
 #C79586
 #f5ebe0
@@ -7,30 +16,60 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <title>Nossos Produtos</title>
+        <title>Nossos Produtos - Oma Kasten</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/produtos.css">
+        
+        <!-- CSS principal dos produtos (inclui navbar, carrinho e botões) -->
+        <link rel="stylesheet" href="css/produtos.css"> <!-- AJUSTAR CAMINHO AQUI -->
+        
+        <!-- Google Fonts - Noto Serif -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
+        <!-- ===================================================== -->
+        <!-- HEADER                                                -->
+        <!-- ===================================================== -->
         <header>
             <figure>
-              <a href="index.html"><img src="../assets/images/logo.png" id="imagem"></a>
+              <a href="index.html">
+                  <img src="../assets/images/logo.png" id="imagem" alt="Oma Kasten"> <!-- AJUSTAR CAMINHO AQUI -->
+              </a>
             </figure>
+            
             <nav class="noto-serif-texto" id="navbar">
               <a href="sobreNos.html">Sobre Nós</a>
               <a href="produtos.html">Produtos</a>
               <a href="contato.html">Contato</a>
               <a href="../auth/login.html">Administrador</a>
             </nav>
+            
+            <!-- Ícone do carrinho na navbar -->
+            <div class="carrinho-nav" id="carrinho-navbar">
+                <a href="carrinho.html" class="carrinho-link">
+                    <span class="carrinho-icone">&#128722;</span> <!-- 🛒 ícone de carrinho -->
+                    <span class="carrinho-contador" id="contador-carrinho">0</span>
+                </a>
+            </div>
         </header>
+
         <main>
 
         </main>
+
+        <!-- ===================================================== -->
+        <!-- CONTEÚDO PRINCIPAL                                    -->
+        <!-- ===================================================== -->
         <div id="container">
             <div id="titulo_principal">
                 <h1 class="noto-serif-texto">Nossos Produtos</h1>
             </div>
             <div id="lista-produtos"></div>
+            
+            <!-- ===================================================== -->
+            <!-- FOOTER                                                -->
+            <!-- ===================================================== -->
             <footer>
                 <div class="footer_container">
                 <div class="footer_section">
@@ -71,6 +110,8 @@
                 </div>
             </footer>
         </div>
-        <script src="js/produtos.js"></script>
+        
+        <!-- JavaScript dos produtos -->
+        <script src="js/produtos.js"></script> <!-- AJUSTAR CAMINHO AQUI -->
     </body>
 </html>

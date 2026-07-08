@@ -1,3 +1,14 @@
+/**
+ * =====================================================
+ * ARQUIVO: produtos.css (CORRIGIDO)
+ * CAMINHO: /css/produtos.css
+ * DESCRIÇÃO: Estilos da página de produtos da Oma Kasten.
+ *            Navbar corrigida mantendo layout original:
+ *            logo à esquerda, links à direita.
+ *            Inclui estilos do carrinho e botão adicionar.
+ * =====================================================
+ */
+
 /* Principais Partes */
 body {
   font-family: Arial, sans-serif;
@@ -14,6 +25,9 @@ body {
   justify-content: space-between;
 }
 
+/* ===================================================== */
+/* HEADER - CORRIGIDO                                    */
+/* ===================================================== */
 header {
   display: flex;
   align-items: center;
@@ -22,6 +36,13 @@ header {
   color: white;
   padding: 10px 20px;
   height: 60px; /* Altura fixa para o cabeçalho */
+}
+
+header figure {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  flex-shrink: 0;
 }
 
 .logo {
@@ -51,6 +72,9 @@ section {
   text-align: center;
 }
 
+/* ===================================================== */
+/* FOOTER                                                */
+/* ===================================================== */
 footer {
   background-color: #5E503F; /* Marrom clássico */
   color: #FFF; /* Texto branco */
@@ -129,40 +153,48 @@ form button:hover {
   font-size: 12px; /* Texto menor */
 }
 
-/* IDs e Classes */
+/* ===================================================== */
+/* IDs e Classes                                         */
+/* ===================================================== */
+
+/* Logo - tamanho proporcional */
 #imagem {
-  width: 200px; /* Largura fixa da imagem */
-  height: auto; /* Altura ajustada proporcionalmente */
+  width: 200px;
+  height: auto;
 }
 
+/* Navbar - CORRIGIDA: alinhada à direita */
 #navbar {
-  display: flex; /* Itens alinhados lado a lado */
-  justify-content: center; /* Centraliza os itens horizontalmente */
-  gap: 20px; /* Espaçamento entre os itens */
-  padding: 10px; /* Espaçamento interno */
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: 20px;
 }
 
 #navbar a {
-  margin-right: 20px; /* Margem direita */
-  letter-spacing: 3px; /* Espaçamento entre letras */
-  text-decoration: none; /* Remove o sublinhado dos links */
-  color: #6c4a4a; /* Cor dos links */
+  margin-right: 0;
+  letter-spacing: 3px;
+  text-decoration: none;
+  color: #6c4a4a;
   font-weight: 900;
+  white-space: nowrap;
 }
 
 #navbar a:hover {
-  opacity: 0.6; /* Reduz opacidade ao passar o mouse */
+  opacity: 0.6;
 }
 
 .descricao {
-  font-size: smaller; /* Fonte menor */
+  font-size: smaller;
   padding-right: 20px;
   padding-left: 20px;
 }
 
 .preco {
-  color: #443434; /* Cor do texto */
-  font-weight: 600; /* Texto em negrito */
+  color: #443434;
+  font-weight: 600;
 }
 
 #titulo_principal {
@@ -170,7 +202,6 @@ form button:hover {
   top: 80px;
   height: 10vw;
   width: 100%;
-  /*background-color: #c795865b;  Fundo semitransparente */
   background-color: #ffffff00;
   text-align: center;
   display: flex;
@@ -188,7 +219,7 @@ table {
   margin-bottom: 40px;
   text-align: center;
   align-items: center;
-  border-collapse: collapse; /* Remove espaços entre bordas */
+  border-collapse: collapse;
   width: 100%;
 }
 
@@ -197,27 +228,155 @@ table tr td {
 }
 
 /* Animação ao passar o mouse */
-/* Configura o efeito de zoom ao passar o mouse sobre elementos com a classe 'produtos' */
 .produtos {
-  height: 200px; /* Altura da imagem */
-  width: 280px; /* Largura da imagem */
-  border-radius: 10px; /* Bordas arredondadas */
-  overflow: hidden; /* Esconde o conteúdo que extrapola o contêiner */
-  -webkit-transition: -webkit-transform .5s ease; /* Transição suave para navegadores baseados em WebKit */
-  transition: transform .5s ease; /* Transição suave para o efeito de transformação */
+  height: 200px;
+  width: 280px;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
 }
 
-/* Define o comportamento ao passar o mouse (hover) */
 .produtos:hover {
-  -webkit-transform: scale(1.1); /* Aumenta a escala em 10% */
-  transform: scale(1.1); /* Aumenta a escala em 10% */
-  cursor: pointer; /* Exibe o cursor como ponteiro */
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
+/* ===================================================== */
+/* FONTE NOTO SERIF                                      */
+/* ===================================================== */
 .noto-serif-texto {
   font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
-  font-weight: 900;
+  font-weight: 500;
   font-style: normal;
   font-variation-settings: "width" 100;
+}
+
+/* ===================================================== */
+/* ÍCONE DO CARRINHO NA NAVBAR                           */
+/* ===================================================== */
+.carrinho-nav {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.carrinho-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #6c4a4a;
+  font-weight: 900;
+  font-family: "Noto Serif", serif;
+  position: relative;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.carrinho-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.carrinho-icone {
+  font-size: 24px;
+  margin-right: 4px;
+}
+
+.carrinho-contador {
+  background-color: #C79586;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  font-family: Arial, sans-serif;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -2px;
+  right: 2px;
+  min-width: 20px;
+  transition: transform 0.2s ease;
+}
+
+.carrinho-contador.atualizado {
+  transform: scale(1.3);
+}
+
+/* ===================================================== */
+/* BOTÃO ADICIONAR AO CARRINHO (NA PÁGINA DE PRODUTOS)   */
+/* ===================================================== */
+.btn-adicionar-carrinho {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #D8A790;
+  color: #fff;
+  border: 2px solid #D8A790;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+  letter-spacing: 0.5px;
+}
+
+.btn-adicionar-carrinho:hover {
+  background-color: #C79586;
+  border-color: #C79586;
+  transform: translateY(-2px);
+}
+
+.btn-adicionar-carrinho:active {
+  transform: scale(0.95);
+}
+
+.btn-adicionar-carrinho:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* ===================================================== */
+/* RESPONSIVIDADE                                        */
+/* ===================================================== */
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+    height: auto;
+    min-height: 60px;
+    padding: 10px;
+  }
+
+  #navbar {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    margin: 5px 0;
+  }
+
+  #navbar a {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+  
+  #imagem {
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  #imagem {
+    height: 35px;
+  }
+
+  #navbar a {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
 }

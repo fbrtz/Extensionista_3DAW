@@ -54,6 +54,6 @@ Antes de começar, certifique-se de ter instalado:
 
 ## 👥 Autores
 
-**Fábio Rodrigo Ortiz dos Santos**  
+**Fabio Rodrigo Ortiz dos Santos**  
 
 **Marcos Ferreira de Souza** 

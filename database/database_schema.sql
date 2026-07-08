@@ -64,6 +64,49 @@ CREATE TABLE contatos (
 
 
 
+-- =====================================================
+-- MÓDULO: CARRINHO DE COMPRAS - OMA KASTEN
+-- BANCO: MySQL
+-- DESCRIÇÃO: Criação das tabelas para gerenciamento
+--            do carrinho de compras.
+-- =====================================================
+
+-- Utilizar o banco de dados existente
+-- USE oma_kasten;
+
+-- =====================================================
+-- Tabela: carrinhos
+-- Armazena os carrinhos criados para cada visitante
+-- =====================================================
+CREATE TABLE IF NOT EXISTS carrinhos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    token VARCHAR(64) NOT NULL UNIQUE,
+    status ENUM('ABERTO', 'FINALIZADO', 'ABANDONADO') NOT NULL DEFAULT 'ABERTO',
+    data_criacao DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    ultima_atualizacao DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    INDEX idx_token (token),
+    INDEX idx_status (status)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- =====================================================
+-- Tabela: carrinho_itens
+-- Armazena os itens adicionados em cada carrinho
+-- =====================================================
+CREATE TABLE IF NOT EXISTS carrinho_itens (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    carrinho_id INT NOT NULL,
+    produto_id INT NOT NULL,
+    quantidade INT NOT NULL DEFAULT 1,
+    valor_unitario DECIMAL(10,2) NOT NULL,
+    FOREIGN KEY (carrinho_id) REFERENCES carrinhos(id) ON DELETE CASCADE,
+    FOREIGN KEY (produto_id) REFERENCES produtos(id) ON DELETE RESTRICT,
+    INDEX idx_carrinho (carrinho_id),
+    INDEX idx_produto (produto_id),
+    UNIQUE KEY uk_carrinho_produto (carrinho_id, produto_id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+
+
 -- INSERTS DE TESTE
 
 INSERT INTO usuarios (nome, senha)

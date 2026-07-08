@@ -1,0 +1,165 @@
+<!--
+=====================================================
+ARQUIVO: carrinho.html
+CAMINHO: /carrinho.html
+DESCRIÇÃO: Página de carrinho de compras da Oma Kasten.
+           Exibe itens, permite gerenciar quantidades,
+           remover produtos e finalizar pedido via WhatsApp.
+=====================================================
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Carrinho - Oma Kasten</title>
+    
+    <!-- CSS do carrinho -->
+    <link rel="stylesheet" href="css/carrinho.css"> <!-- AJUSTAR CAMINHO AQUI -->
+    
+    <!-- Google Fonts - Noto Serif (consistente com o projeto) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ===================================================== -->
+    <!-- HEADER - Mantendo o estilo original da Oma Kasten      -->
+    <!-- ===================================================== -->
+    <header>
+        <figure>
+            <a href="index.html">
+                <img src="../assets/images/logo.png" id="imagem" alt="Oma Kasten"> <!-- AJUSTAR CAMINHO AQUI -->
+            </a>
+        </figure>
+        <nav class="noto-serif-texto" id="navbar">
+            <a href="sobreNos.html">Sobre Nós</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="contato.html">Contato</a>
+            <a href="../auth/login.html">Administrador</a>
+        </nav>
+        <!-- Ícone do carrinho na navbar -->
+        <div class="carrinho-nav" id="carrinho-navbar">
+            <a href="carrinho.html" class="carrinho-link">
+                <span class="carrinho-icone">&#128722;</span> <!-- 🛒 ícone de carrinho -->
+                <span class="carrinho-contador" id="contador-carrinho">0</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- ===================================================== -->
+    <!-- CONTEÚDO PRINCIPAL DO CARRINHO                         -->
+    <!-- ===================================================== -->
+    <main class="carrinho-container">
+        <!-- Título da página -->
+        <div class="carrinho-titulo">
+            <h1 class="noto-serif-texto">Meu Carrinho</h1>
+            <div class="linha-decorativa"></div>
+            <span class="quantidade-itens" id="total-itens-texto">0 Itens</span>
+        </div>
+
+        <!-- Estado: Carrinho Vazio -->
+        <div class="carrinho-vazio" id="carrinho-vazio" style="display: none;">
+            <div class="vazio-icone">
+                <span>&#128722;</span> <!-- 🛒 -->
+            </div>
+            <h2 class="noto-serif-texto">Seu carrinho está vazio</h2>
+            <p>Parece que você ainda não escolheu suas doçuras artesanais para hoje.</p>
+            <a href="produtos.html" class="btn-continuar-comprando">Continuar Comprando</a>
+        </div>
+
+        <!-- Estado: Carrinho com Itens -->
+        <div class="carrinho-grid" id="carrinho-grid">
+            <!-- Lista de Itens -->
+            <div class="carrinho-itens" id="lista-itens">
+                <!-- Os itens serão inseridos dinamicamente via JavaScript -->
+            </div>
+
+            <!-- Resumo do Pedido (Sidebar) -->
+            <aside class="resumo-pedido" id="resumo-pedido">
+                <h2 class="noto-serif-texto">Resumo do Pedido</h2>
+                
+                <div class="resumo-linhas">
+                    <div class="resumo-linha">
+                        <span>Subtotal</span>
+                        <span id="resumo-subtotal">R$ 0,00</span>
+                    </div>
+                    <div class="resumo-linha frete-info">
+                        <span>Frete</span>
+                        <span class="frete-texto">Calculado via WhatsApp</span>
+                    </div>
+                </div>
+
+                <div class="resumo-divisoria"></div>
+
+                <div class="resumo-total">
+                    <span>Total</span>
+                    <span class="total-valor" id="resumo-total">R$ 0,00</span>
+                </div>
+
+                <div class="frete-aviso">
+                    <span class="frete-icone">&#128666;</span> <!-- 🚚 -->
+                    <p>Frete grátis em pedidos acima de R$ 150</p>
+                </div>
+
+                <button class="btn-finalizar" id="btn-finalizar" disabled>
+                    Finalizar Pedido
+                    <span class="seta">&#8594;</span> <!-- → -->
+                </button>
+
+                <div class="continuar-comprando-link">
+                    <a href="produtos.html" class="link-voltar">
+                        <span>&#8592;</span> Continuar Comprando
+                    </a>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- ===================================================== -->
+    <!-- FOOTER - Mantendo o estilo original da Oma Kasten      -->
+    <!-- ===================================================== -->
+    <footer>
+        <div class="footer_container">
+            <div class="footer_section">
+                <h3>Institucional</h3>
+                <ul>
+                    <li><a href="#">Quem Somos</a></li>
+                    <li><a href="#">Especialidades</a></li>
+                    <li><a href="#">Política de Frete</a></li>
+                    <li><a href="#">Política de Trocas e Devoluções</a></li>
+                </ul>
+            </div>
+            <div class="footer_section">
+                <h3>Meios de Pagamento</h3>
+                <p>Cartões de Crédito e Pix</p>
+            </div>
+            <div class="footer_section">
+                <h3>Formas de Envio</h3>
+                <p>Correios - Sedex</p>
+            </div>
+            <div class="footer_section">
+                <h3>Redes Sociais</h3>
+                <ul class="social-media">
+                    <li><a href="https://www.instagram.com/oma_kasten?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer_section">
+                <h3>Cadastre-se</h3>
+                <p>Receba novidades deliciosas:</p>
+                <form action="#">
+                    <input type="email" placeholder="Seu e-mail">
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer_final">
+            <p>© 2024 Oma Kasten - Todos os direitos reservados</p>
+            <p>Criado com carinho</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript do carrinho -->
+    <script src="js/carrinho.js"></script> <!-- AJUSTAR CAMINHO AQUI -->
+</body>
+</html>
