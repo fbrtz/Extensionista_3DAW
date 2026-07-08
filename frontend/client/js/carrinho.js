@@ -18,7 +18,7 @@ const API_BASE = './api/';
 
 // AJUSTAR TELEFONE AQUI - Número do WhatsApp para onde os pedidos serão enviados
 // Formato: 55DDDNumero - Sem espaços, sem traços, sem parênteses
-const WHATSAPP_NUMERO = '5521977282444';
+const WHATSAPP_NUMERO = '5521999999999'; // Substitua pelo número real  
 
 // AJUSTAR CAMINHO AQUI - Caminho base para as imagens dos produtos
 const IMAGENS_BASE = '../assets/images/';
